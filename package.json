@@ -1,0 +1,20 @@
+{
+  "name": "leassy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass --style=compressed --watch src/scss:dist/css",
+    "build": "esbuild src/app.js --bundle --minify --sourcemap --outfile=dist/app.js",
+    "dev": "esbuild src/app.js --outfile=dist/app.js --bundle --watch --sourcemap"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.12.5"
+  },
+  "devDependencies": {
+    "sass": "^1.34.1"
+  }
+}
