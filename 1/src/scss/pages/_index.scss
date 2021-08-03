@@ -1,0 +1,95 @@
+.container {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 10px;
+}
+
+.cubes_block_main {
+
+  .cubes_item {
+    width: 60px;
+    height: 60px;
+    background: white;
+    margin-top: 15px;
+    border: solid 2px black;
+    border-radius: 8px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .cubes_item__two {
+    .circle_row {
+      &:nth-child(2) {
+        align-self: flex-end;
+      }
+    }
+  }
+
+  .cubes_item__five {
+    .circle_row {
+      &:nth-child(2){
+        align-self: center;
+      }
+    }
+  }
+
+  .cubes_item__three {
+    .circle_row {
+      &:nth-child(2){
+        align-self: center;
+      }
+
+      &:nth-child(3){
+        align-self: flex-end;
+      }
+    }
+  }
+
+  .cubes_item__one {
+    .circle_row {
+      align-self: center;
+      justify-content: center;
+    }
+  }
+
+  .cubes_block_vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cubes_block_horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .cubes_item {
+      margin-left: 15px;
+      &:first-child {
+        margin-left: 0px;
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .circle_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;
+  }
+}

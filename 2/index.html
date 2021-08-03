@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Start</title>
+
+    <link rel="stylesheet" href="dist/app.css" />
+    <link rel="stylesheet" href="dist/css/main.css" />
+
+  </head>
+  <body>
+
+
+    <div class="container">
+      <div class="form_block">
+
+        <h3 class="title">Stackfindover</h3>
+
+        <form class="main_form" action="">
+          <p>Sign in to your account</p>
+
+          <div class="form-element form-element__email">
+            <label for="email" class="form-element__label">Email</label>
+            <div class="form-element-block">
+              <input type="text" placeholder="text" id="email" class="form-element__input">
+            </div>
+            <div class="status">
+              <p class="error">error</p>
+              <p class="warning">Warning!</p>
+              <p class="success">Success !</p>
+            </div>
+          </div>
+
+          <div class="form-element form-element__password">
+            <label for="Password" class="form-element__label">
+              <p>Password</p>
+              <span><a href="https://www.google.com.ua/" target="_blank">Forgot your password?</a></span>
+            </label>
+            <div class="form-element-block">
+              <input type="text" placeholder="text" id="password" class="form-element__input">
+            </div>
+            <div class="status">
+              <p class="error">error</p>
+              <p class="warning">Warning!</p>
+              <p class="success">Success !</p>
+            </div>
+          </div>
+
+          <div class="form-element-toggle">
+            <input id="c2" type="checkbox" checked="" class="checkbox">
+            <label for="c2">Stay signed in for a week</label>
+          </div>
+
+          <div class="buttons">
+            <button class="btn button-red" id="submitForm">
+              Continue
+            </button>
+          </div>
+
+          <a class="link" href="https://www.google.com.ua/maps/" target="_blank">
+            Use single sign-on (Google) instead
+          </a>
+        </form>
+
+        <div class="sign_up">
+            <span>
+               Don't have an account?
+           <span>
+          <a class="link" href="https://www.facebook.com/" target="_blank">
+            Sign up
+         </a>
+        </span>
+      </span>
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <!-- scripts -->
+    <script src="dist/app.js"></script>
+  </body>
+</html>
