@@ -29,7 +29,6 @@ window.addEventListener('load', function (event) {
         formBlockInput.forEach((item) => {
             item.addEventListener("input", () => {
                 BtnForm.removeAttribute("disabled");
-                console.log("sdqd")
             })
         })
 
